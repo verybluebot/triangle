@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <title>My Triangle</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">My Triangle</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a ui-sref="main">Home</a></li>
+          <li><a ui-sref="main">Main</a></li>
+          <li><a ui-sref="input">Input</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div ui-view></div>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+
+    <!-- angular packages -->
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+    <!-- project files -->
+    <script src="app/app.module.js"></script>
+    <script src="app/app.config.js"></script>
+    <script src="app/input/input.controller.js"></script>
+    <script src="app/main/main.controller.js"></script>
+    <script src="app/factories/triangle.factory.js"></script>
+  </body>
+</html>

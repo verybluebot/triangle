@@ -1,0 +1,20 @@
+{
+  "name": "project_elishulga",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-ui-router": "^0.3.1",
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.1"
+  },
+  "scripts": {
+    "start": "http-server -a localhost -p 8000 -c-1 ./"
+  }
+}
